@@ -1919,3 +1919,542 @@ französischen Mathematiker Blaise Pascal (1623--1662) benannt\footnote{
               \item \(q^{16}-4q^{12}+6q^8-4q^4+1\)
           \end{enumerate}
 \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\clearpage
+\subsection{Faktorzerlegung}
+\begin{LA}
+    {Einführungsaufgabe}{E in Faktorzerlegung}
+    Betrachten Sie den Bruch
+    \[
+        \frac{x^2+2x-15}{x-3}.
+    \]
+
+    \begin{enumerate}
+        \item Setzen Sie für \(x\) die Zahlen \(0\), \(1\), \(2\), \(5\), \(10\) und \(-2\) ein und berechnen Sie den Wert des Bruches.
+              Die Resultate können Sie in die Tabelle eintragen:
+
+              \[
+                  \renewcommand{\arraystretch}{2}
+                  \begin{array}{
+                          |>{\centering\arraybackslash}m{1.5cm}
+                          |*{6}{>{\centering\arraybackslash}m{1.5cm}|}
+                      }
+                      \hline
+                      x            & 0 & 1 & 2 & 5 & 10 & \(-2\) \\ \hline
+                      \text{Bruch} &   &   &   &   &    &        \\ \hline
+                  \end{array}
+              \]
+
+        \item Was vermuten Sie: Welchen Wert wird der Bruch annehmen, wenn man für \(x\) die Zahl \(723\) einsetzt?
+
+        \item \textbf{Challenge:} Können Sie Ihre Vermutung mit einer Termumformung beweisen?
+    \end{enumerate}
+\end{LA}
+
+\clearpage
+
+Bis anhin haben wir Terme vereinfacht, indem wir alle Multiplikationen ausgeführt haben, bis am Schluss eine Summe von Monomen übrigblieb.
+
+\textbf{Beispiel:}
+\[
+    (x+5)(x-3)
+    = x^2+5x-3x-15
+    = x^2+2x-15
+\]
+
+Diese Art der Darstellung eines Polynoms als \textbf{Summe} ist oft hilfreich. Es gibt aber Situationen, in welchen es hilfreicher ist, Polynome als \textbf{Produkte} zu schreiben. So ist der Bruch
+\[
+    \frac{x^2+2x-15}{x-3}
+\]
+auf den ersten Blick ziemlich kompliziert. Wenn man das Polynom im Zähler als ein Produkt darstellt, kann man kürzen und der Bruch wird plötzlich viel einfacher:
+\[
+    \frac{x^2+2x-15}{x-3}
+    =
+    \frac{(x+5)(x-3)}{x-3}
+    =
+    x+5
+\]
+
+In diesem Kapitel geht es also darum, Polynome in Produkte zu verwandeln. Diese Umformung nennt man auch \emph{Faktorzerlegung}. Dabei werden die Polynome in Faktoren zerlegt, oder kurz \emph{faktorisiert}.
+
+Übrigens gibt es eine zweite, ganz wichtige Anwendung der Faktorzerlegung. Die Gleichung
+\[
+    x^2+2x-15=0
+\]
+ist in dieser Form ganz schwierig zu lösen. Viel einfacher wird es, wenn man die linke Seite faktorisiert:
+\[
+    (x+5)(x-3)=0
+\]
+
+Wenn das Produkt von zwei Zahlen Null ist, muss einer der beiden Faktoren Null sein. Die Gleichung geht also genau dann auf, wenn \(x=-5\) oder \(x=3\) ist.
+
+\bigskip
+
+Im Folgenden lernen Sie die wichtigsten Techniken kennen, wie man eine Summe in ein Produkt umwandeln kann:
+\textbf{Ausklammern}
+
+Das Ausklammern ist die einfachste Art, einen Term in ein Produkt zu verwandeln.
+Kommt bei einem Polynom in jedem Summanden der gleiche Faktor vor, so kann man
+diesen ausklammern.
+
+\begin{bsp}{}{}
+    \[
+        8a^2b + 12ab^2 =
+    \]
+    \vspace*{1cm}
+\end{bsp}
+
+\textbf{Binomische Formeln}
+
+Eine andere Möglichkeit, ein Polynom in ein Produkt zu verwandeln, ergibt sich,
+wenn man die binomischen Formeln gewissermassen «rückwärts» anwendet. Im
+folgenden Beispiel werden wir die erste binomische Formel
+\[
+    (a+b)^2 = a^2 + 2ab + b^2
+\]
+verwenden, um ein Polynom zu faktorisieren.
+
+\begin{bsp}{}{}
+    \[
+        x^2 + 6x + 9
+    \]
+    \vspace*{1cm}
+\end{bsp}
+
+\begin{bsp}{}{}
+    \[
+        4x^2-y^2
+    \]
+    \vspace*{1cm}
+\end{bsp}
+
+\begin{bsp}{}{}
+    \[
+        32z^2-16z+2
+    \]
+    \vspace*{1cm}
+\end{bsp}
+
+\textbf{Der Satz von Vieta}
+
+Zum Schluss lernen wir noch eine dritte Technik zur Faktorzerlegung von Polynomen
+kennen: Der Satz von Vieta (benannt nach dem französischen Mathematiker
+François Viète, 1540--1603).
+
+\begin{LA}
+    {Des Satz von Vieta}{}
+
+
+    \begin{enumerate}
+        \item \textbf{(Im Plenum)} Vereinfachen Sie die Terme durch Ausmultiplizieren:
+              \begin{enumerate}
+                  \item \((x+2)(x-3)=\)    \vspace*{0.5cm}
+                  \item \((x+4)(x-3)=\)    \vspace*{0.5cm}
+                  \item \((x+7)(x-3)=\)    \vspace*{0.5cm}
+                  \item \((x+100)(x-3)=\)    \vspace*{0.5cm}
+                  \item \((x+a)(x-3)=\)    \vspace*{0.5cm}
+              \end{enumerate}
+
+              Die Hilfsvariable \(a\) im letzten Term nennt man einen
+              \emph{Parameter}. Sie ist nicht die Hauptvariable im Term.
+              Aber durch deren Verwendung können wir alle Polynome der Form
+              \((x+\text{etwas})(x-3)\) gleichzeitig untersuchen.
+
+        \item \textbf{(Jeder für sich)} Vereinfachen Sie die Terme durch
+              Ausmultiplizieren, finden Sie das «Muster».
+              \begin{enumerate}
+                  \item \((x+3)(x+4)=\)     \vspace*{0.5cm}
+                  \item \((x+5)(x+1)=\)    \vspace*{0.5cm}
+                  \item \((x+7)(x+2)=\)    \vspace*{0.5cm}
+                  \item \((x+4)(x+9)=\)    \vspace*{0.5cm}
+                  \item \((x+2)(x+(-3))=\)    \vspace*{0.5cm}
+                  \item \((x+a)(x+b)=\)    \vspace*{0.5cm}
+              \end{enumerate}
+
+        \item \textbf{(Jeder für sich)} Faktorisieren Sie die Polynome.
+              \begin{enumerate}
+                  \item \(x^2+3x+2\)    \vspace*{0.5cm}
+                  \item \(x^2+5x+6\)    \vspace*{0.5cm}
+                  \item \(x^2+16x+63\)    \vspace*{0.5cm}
+                  \item \(x^2-7x+10\)    \vspace*{0.5cm}
+              \end{enumerate}
+    \end{enumerate}
+\end{LA}
+
+\clearpage
+
+\begin{bsp}
+    {}{}
+    \( q^2 -16q -36\)
+    \vspace*{0.5cm}
+\end{bsp}
+
+\begin{bsp}
+    {}{}
+    \( b^2 +5b -24\)
+    \vspace*{0.5cm}
+\end{bsp}
+
+
+\begin{bsp}
+    {}{}
+    \( 5a^2+10ab+5b^2\)
+    \vspace*{0.5cm}
+\end{bsp}
+
+
+\begin{bsp}
+    {}{}
+    \( x^4-y^4\)
+    \vspace*{0.5cm}
+\end{bsp}
+
+
+\begin{bsp}
+    {}{}
+    \( x^2(y-5)+x(5-y)-2(y-5)\)
+    \vspace*{2cm}
+\end{bsp}
+
+\clearpage
+\begin{ueb}
+    {Faktorzerlegung}{}
+    \begin{enumerate}
+        \item
+              \begin{enumerate}
+                  \item \(24z^3-16z^2\)
+                  \item \(20y^2+12y\)
+                  \item \(z^2-z\)
+                  \item \(81y^3+54y\)
+                  \item \(-15x+27y-12z\)
+                  \item \(-14np-12nq-21n\)
+              \end{enumerate}
+
+        \item
+              \begin{enumerate}
+                  \item \(20ab-20a^2b+5ab^3\)
+                  \item \(6x^2y^2-3xy^2+9x^2y\)
+                  \item \(42m^3n^2-70m^2n^3-42m^2n^2\)
+                  \item \(3qr^2+3r^3+3r^2s-r^2\)
+              \end{enumerate}
+
+        \item
+              \begin{enumerate}
+                  \item \(49a^2-36b^2\)
+                  \item \(x^2+8x+16\)
+                  \item \(100-x^2\)
+                  \item \(25y^2-30xy+9x^2\)
+                  \item \(9x^2-(2y)^2\)
+                  \item \(16x^2-1\)
+                  \item \(x^4-y^4\)
+                  \item \(4f^2-20fg+25g^2\)
+              \end{enumerate}
+
+        \item
+              \begin{enumerate}
+                  \item \(16r^2-24rs+9s^2\)
+                  \item \(p^4-8p^2+16\)
+                  \item \(-9a^2+81b^2\)
+                  \item \(2-50z^2\)
+                  \item \(5a^2-10ab+5b^2\)
+                  \item \(4c^2-c^2d^4\)
+                  \item \(n^3-n\)
+                  \item \(-18u^2+12uv-2v^2\)
+              \end{enumerate}
+
+        \item Setzen Sie für \(\square\), \(\bigcirc\) und \(\diamond\) einen passenden Term ein, sodass eine binomische Formel anwendbar wird. Schreiben Sie den Term anschliessend als Produkt.
+
+              \begin{enumerate}
+                  \item \(x^2-\square\cdot x+64\)
+                  \item \(9x^2+\square+49\)
+                  \item \(x^2+3x+\bigcirc\)
+                  \item \(\diamond+2a^2b+\square\)
+              \end{enumerate}
+
+        \item
+              \begin{enumerate}
+                  \item \(-p^2+169\)
+                  \item \(126a^2b+96ab^2\)
+                  \item \(25x^4-80x^3+64x^2\)
+                  \item \(18a^2b+18ab^2-9ab\)
+                  \item \(18z^2-2\)
+                  \item \(81u^2+9z^2\)
+              \end{enumerate}
+
+        \item
+              \begin{enumerate}
+                  \item \(8u^2+2z^2+8uz\)
+                  \item \(x^2y^2-2xy+y^2\)
+                  \item \(\dfrac{1}{4}a^2+ab+b^2\)
+                  \item \(9a^2+6a+1\)
+                  \item \(\dfrac{1}{9}x^4+2x^3+9x^2\)
+                  \item \(-3u^2+18uv-27v^2\)
+              \end{enumerate}
+
+        \item
+              \begin{enumerate}
+                  \item \(x^2+9x+20\)
+                  \item \(d^2+20d+91\)
+                  \item \(r^2-15r+54\)
+                  \item \(n^2-26n+144\)
+                  \item \(n^2-24n+144\)
+                  \item \(q^2-16q-36\)
+                  \item \(s^2+18s+72\)
+                  \item \(z^2-19z+48\)
+                  \item \(p^2+23p+132\)
+              \end{enumerate}
+
+        \item
+              \begin{enumerate}
+                  \item \(y^2-29y+210\)
+                  \item \(b^2+10b+9\)
+                  \item \(a^2+6a-10\)
+                  \item \(a^2+2a-24\)
+                  \item \(u^2-3u-40\)
+                  \item \(t^2-6t-7\)
+                  \item \(x^2-25x+84\)
+                  \item \(x^2+25x-84\)
+                  \item \(m^2-m-110\)
+              \end{enumerate}
+
+        \item
+              \begin{enumerate}
+                  \item \(c^2-3c-108\)
+                  \item \(m^2+4m-5\)
+                  \item \(y^2-y-30\)
+                  \item \(z^2+9z-90\)
+                  \item \(r^2-43r-240\)
+                  \item \(y^2+40y+400\)
+                  \item \(b^2+20b+51\)
+                  \item \(t^2+t-156\)
+                  \item \(x^2-4x+16\)
+              \end{enumerate}
+
+        \item Challenge
+              \begin{enumerate}
+                  \item \(3c^2+16c+5\)
+                  \item \(2x^2-5x+2\)
+                  \item \(4e^2+3e-1\)
+                  \item \(5k^2-2k-3\)
+                  \item \(2n^2+7n+3\)
+                  \item \(12r^2-8r+1\)
+              \end{enumerate}
+    \end{enumerate}
+\end{ueb}
+\clearpage
+\emph{Lösungen}
+\begin{enumerate}
+    \item
+          \begin{enumerate}
+              \item \(8z^2(3z-2)\)
+              \item \(4y(5y+3)\)
+              \item \(z(z-1)\)
+              \item \(27y(3y^2+2)\)
+              \item \(-3(5x-9y+4z)\)
+              \item \(-n(14p+12q+21)\)
+          \end{enumerate}
+
+    \item
+          \begin{enumerate}
+              \item \(5ab(4-4a+b^2)\)
+              \item \(3xy(2xy-y+3x)\)
+              \item \(14m^2n^2(3m-5n-3)\)
+              \item \(r^2(3q+3r+3s-1)\)
+          \end{enumerate}
+
+    \item
+          \begin{enumerate}
+              \item \((7a-6b)(7a+6b)\)
+              \item \((x+4)^2\)
+              \item \((10-x)(10+x)\)
+              \item \((5y-3x)^2\)
+              \item \((3x-2y)(3x+2y)\)
+              \item \((4x-1)(4x+1)\)
+              \item \((x-y)(x+y)(x^2+y^2)\)
+              \item \((2f-5g)^2\)
+          \end{enumerate}
+
+    \item
+          \begin{enumerate}
+              \item \((4r-3s)^2\)
+              \item \((p^2-4)^2=(p-2)^2(p+2)^2\)
+              \item \(9(3b-a)(3b+a)\)
+              \item \(2(1-5z)(1+5z)\)
+              \item \(5(a-b)^2\)
+              \item \(c^2(2-d^2)(2+d^2)\)
+              \item \(n(n-1)(n+1)\)
+              \item \(-2(3u-v)^2\)
+          \end{enumerate}
+
+    \item
+          \begin{enumerate}
+              \item \(\square=16,\qquad x^2-16x+64=(x-8)^2\)
+              \item \(\square=42x,\qquad 9x^2+42x+49=(3x+7)^2\)
+              \item \(\bigcirc=\dfrac94,\qquad x^2+3x+\dfrac94=\left(x+\dfrac32\right)^2\)
+              \item \(\diamond=a^4,\quad \square=b^2,\qquad
+                    a^4+2a^2b+b^2=(a^2+b)^2\)
+          \end{enumerate}
+
+    \item
+          \begin{enumerate}
+              \item \((13-p)(13+p)\)
+              \item \(6ab(21a+16b)\)
+              \item \(x^2(5x-8)^2\)
+              \item \(9ab(2a+2b-1)\)
+              \item \(2(3z-1)(3z+1)\)
+              \item \(9(9u^2+z^2)\)
+          \end{enumerate}
+
+    \item
+          \begin{enumerate}
+              \item \(2(2u+z)^2\)
+              \item \(y(x^2y-2x+y)\)
+              \item \(\dfrac14(a+2b)^2\)
+              \item \((3a+1)^2\)
+              \item \(\dfrac19x^2(x+9)^2\)
+              \item \(-3(u-3v)^2\)
+          \end{enumerate}
+
+    \item
+          \begin{enumerate}
+              \item \((x+4)(x+5)\)
+              \item \((d+7)(d+13)\)
+              \item \((r-9)(r-6)\)
+              \item \((n-18)(n-8)\)
+              \item \((n-12)^2\)
+              \item \((q-18)(q+2)\)
+              \item \((s+6)(s+12)\)
+              \item \((z-16)(z-3)\)
+              \item \((p+11)(p+12)\)
+          \end{enumerate}
+
+    \item
+          \begin{enumerate}
+              \item \((y-15)(y-14)\)
+              \item \((b+1)(b+9)\)
+              \item \((a+3-\sqrt{19})(a+3+\sqrt{19})\)
+              \item \((a-4)(a+6)\)
+              \item \((u-8)(u+5)\)
+              \item \((t-7)(t+1)\)
+              \item \((x-21)(x-4)\)
+              \item \((x-3)(x+28)\)
+              \item \((m-11)(m+10)\)
+          \end{enumerate}
+
+    \item
+          \begin{enumerate}
+              \item \((c-12)(c+9)\)
+              \item \((m-1)(m+5)\)
+              \item \((y-6)(y+5)\)
+              \item \((z-6)(z+15)\)
+              \item \((r-48)(r+5)\)
+              \item \((y+20)^2\)
+              \item \((b+3)(b+17)\)
+              \item \((t-12)(t+13)\)
+              \item nicht über \(\mathbb{R}\) in Linearfaktoren zerlegbar
+          \end{enumerate}
+
+    \item
+          \begin{enumerate}
+              \item \((3c+1)(c+5)\)
+              \item \((2x-1)(x-2)\)
+              \item \((4e-1)(e+1)\)
+              \item \((5k+3)(k-1)\)
+              \item \((2n+1)(n+3)\)
+              \item \((6r-1)(2r-1)\)
+          \end{enumerate}
+\end{enumerate}
+
+
+
+\clearpage
+\textbf{Zusatz: Faktorzerlegung bei Zahlen -- Primzahlen}
+
+\begin{definition}{Primzahl}{primzahl}
+    Eine Zahl heisst \textit{Primzahl}, wenn sie genau zwei Teiler besitzt.
+\end{definition}
+
+\textbf{Bemerkung:} Die Zahl \(1\) hat genau einen Teiler (nämlich \(1\)). Also ist \(1\) keine Primzahl.
+
+\begin{satz}{Fundamentalsatz der Zahlentheorie}{fundamentalsatzzahlentheorie}
+    Jede natürliche Zahl \(n>1\) lässt sich eindeutig als Produkt der Form
+    \[
+        n=p_1^{e_1}\cdot p_2^{e_2}\cdot\ldots\cdot p_k^{e_k}
+    \]
+    schreiben, wobei \(p_1,p_2,\ldots,p_k\) Primzahlen und
+    \(e_1,e_2,\ldots,e_k\) natürliche Zahlen sind.
+\end{satz}
+
+\textbf{Beispiel:}
+\[
+    360=2^3\cdot3^2\cdot5
+\]
+
+\begin{satz}{Unendlich viele Primzahlen}{unendlichvieleprimzahlen}
+    Es gibt unendlich viele Primzahlen.
+\end{satz}
+
+\textbf{Beweis:}
+
+\clearpage
+
+\textbf{Grosse Primzahlen}
+
+Die grösste bekannte Primzahl wurde im Jahr 2024 entdeckt. Sie lautet
+\[
+    2^{136279841}-1
+\]
+und ist \(41'024'320\) Dezimalstellen lang!
+
+Einige ähnliche Zahlen lassen sich aber sofort ausschliessen:
+
+\begin{enumerate}
+    \item Wieso ist \(2^{2026}+4\) keine Primzahl?
+    \item Wieso ist \(3^{2026}-15\) keine Primzahl?
+    \item Wie kann man ausschliessen, dass \(2^{2026}-1\) eine Primzahl ist?
+          (Denken Sie an die binomischen Formeln \ldots)
+    \item Und nun noch einige Herausforderungen. Zeigen Sie, dass die folgenden Zahlen nicht prim sind:
+          \begin{enumerate}
+              \item \(2^{2026}+2^{1014}+1\)
+              \item \(2^{2026}+2^{1015}-5\)
+          \end{enumerate}
+\end{enumerate}
+
+\textbf{Einige offene Fragen rund um Primzahlen}
+
+\begin{itemize}
+    \item Gibt es unendlich viele Primzahlzwillinge -- also solche, die sich nur um \(2\) unterscheiden wie \(3\) und \(5\), \(11\) und \(13\), \(149\) und \(151\)? (Im Jahr 2013 ist dazu ein wichtiger Schritt gelungen. Vielleicht kann die Vermutung schon bald bewiesen werden.)
+
+    \item Lässt sich jede gerade natürliche Zahl grösser als \(4\) als Summe zweier Primzahlen schreiben?
+\end{itemize}
