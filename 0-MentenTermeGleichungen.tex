@@ -846,3 +846,504 @@ Der Beweis von Euklid ist ein sogenannter \textit{Widerspruchsbeweis}. Bei diese
           %             \]
           %   \end{enumerate}
 \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\clearpage
+\subsection{Terme}
+\begin{LA}
+    {Einführungsfrage}{}
+
+    Denken Sie sich heimlich eine beliebige Zahl und verraten Sie diese niemandem.
+
+    \begin{enumerate}
+        \item Addieren Sie \(4\).
+        \item Multiplizieren Sie das Ergebnis mit \(5\).
+        \item Subtrahieren Sie das Dreifache Ihrer ursprünglich gedachten Zahl.
+        \item Subtrahieren Sie \(6\).
+        \item Teilen Sie das Ergebnis durch \(2\).
+        \item Subtrahieren Sie Ihre ursprünglich gedachte Zahl.
+    \end{enumerate}
+
+    \textbf{Notieren Sie nur Ihr Endresultat.}
+
+    Vergleichen Sie das Resultat mit der*m Nachbar*in.
+
+    Was fällt Ihnen auf? Finden Sie eine Erklärung.
+\end{LA}
+
+\clearpage
+\begin{LA}
+    {Weitere Einführungsfragen}{}
+    \begin{enumerate}
+        \item
+              \[
+                  A = x^2 - xy + y^2,
+                  \qquad
+                  B = x^2 + y(y-x)
+              \]
+
+              \begin{enumerate}
+                  \item Berechnen Sie den Wert von \(A\), wenn \(x=1\) und \(y=2\) ist.
+                  \item Berechnen Sie den Wert von \(B\), wenn \(x=1\) und \(y=2\) ist.
+                  \item Gibt es Zahlen \(x\) und \(y\), für welche \(A\) und \(B\) einen unterschiedlichen Wert liefern?
+              \end{enumerate}
+
+        \item
+              \[
+                  C = y(y+1)-x,
+                  \qquad
+                  D = 2xy+x
+              \]
+
+              \begin{enumerate}
+                  \item Berechnen Sie den Wert von \(C\), wenn \(x=1\) und \(y=2\) ist.
+                  \item Berechnen Sie den Wert von \(D\), wenn \(x=1\) und \(y=2\) ist.
+                  \item Gibt es Zahlen \(x\) und \(y\), für welche \(C\) und \(D\) einen unterschiedlichen Wert liefern?
+              \end{enumerate}
+
+        \item (Diese Aufgabe kann für Schüler aus der zweiten Sek eventuell etwas schwierig sein.)
+
+              Wird vom Produkt zweier Zahlen deren Summe subtrahiert und anschliessend \(1\) addiert, so ergibt sich das Produkt aus der um \(1\) verminderten ersten und der um \(1\) verminderten zweiten Zahl.
+
+              Stimmt das?
+
+        \item Challenge: Ein etwas anderer \enquote{Zaubertrick}. Finden Sie heraus, wie er funktioniert?
+
+              Denken Sie sich eine Zahl. Addieren Sie dazu die Anzahl Ihrer Geschwister. Multiplizieren Sie die erhaltene Zahl mit neun. Wenn Sie gerne jassen, addieren Sie \(36\) zum Resultat. Bilden Sie die Quersumme der Quersumme der Quersumme der erhaltenen Zahl. Wenn das Zwischenresultat kleiner als fünf ist, addieren Sie drei, andernfalls subtrahieren Sie drei.
+
+              Wieso erhält man mit dieser Rechnung immer sechs?
+    \end{enumerate}
+\end{LA}
+
+\clearpage
+Ein \textbf{Term} ist eine sinnvolle Zusammensetzung von Zahlen, Operationszeichen (\(+,-,\cdot,/\)), Klammern und Variablen. Letztere werden durch Buchstaben bezeichnet. Sie dienen als Stellvertreter für Zahlen.
+
+Ein \textbf{Beispiel} für einen Term wäre
+\[
+    a^2+2ab^2+b^2.
+\]
+Für die Variablen \(a\) und \(b\) können Zahlen eingesetzt werden. Setzt man beispielsweise \(a=3\) und \(b=2\), so hat der Term den Wert \(37\). Für \(a=1\) und \(b=-1\) hat der Term den Wert \(4\).
+
+Ein \textbf{anderes Beispiel} wäre der Term
+\[
+    a^2+b^2\cdot(1+2a).
+\]
+Wieder können wir den Variablen Zahlenwerte geben, zum Beispiel wieder \(a=3\) und \(b=2\). Der Term hat dann wiederum den Wert \(37\). Auch für den Fall, dass \(a=1\) und \(b=-1\) ist, liefert der zweite Term den gleichen Wert wie der erste (nämlich \(4\)).
+
+Tatsächlich liefern die beiden Terme
+\[
+    a^2+2ab^2+b^2
+    \qquad\text{und}\qquad
+    a^2+b^2\cdot(1+2a)
+\]
+immer die gleichen Werte, unabhängig davon, welche Zahlen wir für \(a\) und \(b\) einsetzen.
+
+\begin{definition}{Äquivalente Terme}{aequivalenteterme}
+    Setzt man in zwei Terme jeweils die gleichen Zahlen für die Variablen ein und erhält man dabei für jede beliebige Einsetzung übereinstimmend das gleiche Ergebnis, heissen die zwei Terme \textbf{äquivalent}\footnote{Äquivalent heisst wörtlich \enquote{gleichwertig}: \enquote{äqui = gleich} und \enquote{valent = wertig}}.
+\end{definition}
+
+Im Beispiel der Terme \(a^2+2ab^2+b^2\) und \(a^2+b^2(1+2a)\) kann man leicht einsehen, dass sie äquivalent sind. Dazu genügt es, den zweiten Term auszumultiplizieren und neu zu ordnen:
+\[
+    a^2+b^2(1+2a)
+    = a^2+b^2+b^2\cdot2a
+    = a^2+2ab^2+b^2.
+\]
+
+Wichtig bei diesen Umformungsschritten ist, dass die Terme links und rechts des Gleichheitszeichens äquivalent sind.
+
+\begin{definition}{Termumformungen}{termumformungen}
+    Umformungen eines Terms in einen äquivalenten Term heissen \textbf{Termumformungen}.
+\end{definition}
+
+Beim Umformen von Termen werden die Grundgesetze der Arithmetik verwendet:
+
+\[
+    \begin{array}{l|c|c}
+         & \text{Addition } +                 & \text{Multiplikation } \cdot \\ \hline
+        \text{Kommutativgesetz K}
+         & a+b=b+a
+         & a\cdot b=b\cdot a                                                 \\ \hline
+        \text{Assoziativgesetz A}
+         & a+(b+c)=(a+b)+c
+         & a\cdot(b\cdot c)=(a\cdot b)\cdot c                                \\ \hline
+        \text{Neutrales Element N}
+         & a+0=a
+         & a\cdot1=a                                                         \\ \hline
+        \text{Inverses Element I}
+         & a+(-a)=(-a)+a=0
+         & a\cdot\frac{1}{a}=1                                               \\ \hline
+        \text{Distributivgesetz D}
+         & \multicolumn{2}{c}{a(b+c)=ab+ac}
+    \end{array}
+\]
+
+Das mag überraschen, weil in der Praxis viele andere Rechenregeln verwendet werden. \enquote{Minus mal Minus = Plus}, \enquote{steht ein Minus vor der Klammer, müssen alle Vorzeichen gewechselt werden}, \enquote{Null mal etwas = 0}, \enquote{Beim Multiplizieren von Brüchen rechnet man Zähler mal Zähler und Nenner mal Nenner} und viele mehr.
+
+Tatsächlich sind alle diese Regeln direkte Folgerungen aus den Grundgesetzen der Arithmetik. Stellvertretend für alle anderen zeigen wir hier, wie man die Regel \enquote{Minus vor der Klammer} aus den Grundgesetzen herleiten kann:
+
+\begin{satz}{Minus vor der Klammer}{minusvorderklammer}
+    \[
+        -(a+b)=-a-b
+    \]
+\end{satz}
+
+\begin{proof}
+
+    \[
+        \begin{aligned}
+            (a+b) + (-a - b) & \stackrel{A+}{=} a+b-a-b     \\
+                             & \stackrel{K+}{=} a-a+b-b     \\
+                             & \stackrel{A+}{=} (a-a)+(b-b) \\
+                             & \stackrel{I+}{=} 0+0         \\
+                             & \stackrel{N+}{=} 0.
+        \end{aligned}
+    \]
+    Daraus folgt, dass \(-a-b\) das additive Inverse von \(a+b\) ist. Da das additive Inverse eindeutig ist, folgt daraus die Behauptung.
+\end{proof}
+%         -(a+(-b))
+%          & \stackrel{N+}{=} -(a+(-b))+0                             \\
+%          & \stackrel{I+}{=} -(a+(-b))+(a+(-a))                      \\
+%          & \stackrel{N+}{=} \bigl(-(a+(-b))+(a+(-a))\bigr)+0        \\
+%          & \stackrel{I+}{=} \bigl(-(a+(-b))+(a+(-a))\bigr)+(b+(-b)) \\
+%          & \stackrel{A+}{=} -(a+(-b))+a+(-a)+b+(-b)                 \\
+%          & \stackrel{K+}{=} -(a+(-b))+a+(-b)+(-a)+b                 \\
+%          & \stackrel{A+}{=} \bigl(-(a+(-b))+(a+(-b))\bigr)+(-a)+b   \\
+%          & \stackrel{I+}{=} 0+(-a)+b                                \\
+%          & \stackrel{N+}{=} (-a)+b.
+%     \end{aligned}
+% \]
+
+Aus theoretischer Sicht ist es eine interessante Erkenntnis, dass es zur Erklärung der Arithmetik eigentlich nur neun Regeln bedarf. Auch ist es einmal spannend zu sehen, wie man eine andere Rechenregel auf die Grundregeln zurückführt, aber: Beim Beweis merkt man, dass Termumformungen sehr umständlich werden, wenn man bloss auf die 9 Grundrechenregeln zurückgreift. Aus diesem Grund werden in der Praxis doch einige Regeln verwendet, mit denen man Rechenschritte überspringen kann -- eben wie jene, die wir gerade bewiesen haben. Damit kann man Terme schneller vereinfachen. Zum Beispiel
+\[
+    \begin{aligned}
+        a(a+b)-(b^2-a^2)
+         & = a^2+ab-b^2+a^2 \\
+         & = 2a^2+ab-b^2.
+    \end{aligned}
+\]
+
+Eine weitere nützliche Regel betrifft das Ausmultiplizieren von zwei Klammern:
+
+\begin{satz}{Jede mit jeder}{jedemitjeder}
+    \[
+        (a+b)(c+d)=ac+ad+bc+bd
+    \]
+\end{satz}
+
+\textbf{Beispiele:}
+
+\begin{itemize}
+    \item \((2x+1)(3x+2)=\)
+
+    \item Auch mit negativen Vorzeichen:
+
+          \(
+          (3x-2)(3-4z)=
+          \)
+
+    \item Auch mit mehr als zwei Variablen:
+
+          \(
+          (a+b-c)(x+2y+2z)=
+          \)
+\end{itemize}
+
+
+Speziell seien an dieser Stelle auch die Rechenregeln rund um Potenzen erwähnt. Zur Erinnerung:
+
+\begin{definition}{Potenzen}{potenzen}
+    Sei \(a \in \mathbb{R}\) und \(n \in \mathbb{N}\). Die Zahl \(a^n\) ist definiert als
+    \[
+        a^n
+        =
+        \underbrace{a \cdot a \cdot a \cdot \ldots \cdot a}_{n\text{ Faktoren}}.
+    \]
+
+    Speziell: \(a^1=a\)
+\end{definition}
+
+Damit ist zum Beispiel
+\[
+    a^3=a\cdot a\cdot a
+    \qquad\text{und}\qquad
+    a^4=a\cdot a\cdot a\cdot a
+\]
+und damit folgt:
+\[
+    a^3\cdot a^4=
+\]
+
+Oder ganz allgemein:
+\[
+    a^n\cdot a^m=
+\]
+
+Analog ist
+\[
+    \frac{a^5}{a^2}=
+\]
+
+Und
+\[
+    (a^2)^3=
+\]
+
+Und
+\[
+    (ab)^3=
+\]
+
+Allgemein gelten für Potenzen die folgenden Regeln:
+
+\begin{satz}{Potenzgesetze}{potenzgesetze}
+    Für \(a,b\in\mathbb{R}\) und \(n,m\in\mathbb{N}\) gilt:
+    \begin{enumerate}
+        \item
+              \[
+                  a^n\cdot a^m=a^{n+m}
+                  \qquad\text{und}\qquad
+                  \frac{a^n}{a^m}=a^{n-m}
+              \]
+              falls \(a\neq0\) und \(n>m\).
+
+        \item
+              \[
+                  (a^n)^m=a^{n\cdot m}.
+              \]
+
+        \item
+              \[
+                  a^n\cdot b^n=(ab)^n
+                  \qquad\text{und}\qquad
+                  \frac{a^n}{b^n}
+                  =
+                  \left(\frac{a}{b}\right)^n
+              \]
+              falls \(b\neq0\).
+    \end{enumerate}
+\end{satz}
+
+\begin{ueb}
+    {Zu Minus vor der Klammer, Jede mit Jeder und Potenzgesetze}{}
+    \begin{enumerate}
+        % \item
+        %       \begin{enumerate}
+        %           \item \((-b-a)-(a-b)\)
+        %           \item \((a-b)-(-b-a)\)
+        %           \item \(8-\bigl(6p-(3p+8)\bigr)\)
+        %           \item \(-8+\bigl(-6p+(3p+8)\bigr)\)
+        %           \item \(-(2a-b)-\bigl(-2\cdot(b-2a)\bigr)\)
+        %           \item \(\bigl(-2\cdot(-b+2a)\bigr)-(2a-b)\)
+        %       \end{enumerate}
+
+        \item
+              \begin{enumerate}
+                  \item \(-(b-a)-(a-b)\)
+                  \item \(-(b-a)+(a-b)\)
+                  \item \((-x)^2\cdot(x-2)-x^2\cdot(2-x)\)
+                  \item \(-x^2\cdot(x-2)+x^2\cdot(-2-x)\)
+              \end{enumerate}
+
+        \item
+              \begin{enumerate}
+                  \item \(-2\cdot2x+(-x+2y)\cdot(-4)\)
+                  \item \(2xy-4x\cdot\left(-\frac{2}{3}y\right)+3xy-\left(-\frac{5}{6}x\right)\cdot(-y)\)
+                  \item \(-2\cdot(a-b)^2+(-a^2-2ab)\)
+                  \item \(\frac{3}{5}\cdot\left(15m-\frac{2}{3}n+3\right)-\frac{1}{2}\cdot\left(16m-\frac{4}{5}n-\frac{2}{5}\right)\)
+              \end{enumerate}
+
+        \item
+              \begin{enumerate}
+                  \item \(a\cdot(2a-1)+3a\cdot(1-a^2)\)
+                  \item \(ab-2a\cdot(5-3b)+9a\)
+                  \item \(2u\cdot(-3+u)-u\cdot(3+u)\)
+                  \item \((8-2a)\cdot3a+3a(a-4)\)
+                  \item \(-x(3+x)-5(-x^2+1)\)
+                  \item \(abc-a\cdot\bigl((b+1)\cdot c-c\bigr)\)
+                  \item \(-(2-x)\cdot x-2x(-x+2)\)
+                  \item \((2k^3-k^2)\cdot r-(k^3-7k^2)\cdot r\)
+              \end{enumerate}
+
+        \item
+              \begin{enumerate}
+                  \item \((2a-5)(3a-1)\)
+                  \item \((-k+4)(4-k)\)
+                  \item \((-c-5)(-c-2)\)
+                  \item \((3a^2+b^2)(a^2-3b)\)
+                  \item \((a-1)(a^2+a+1)\)
+                  \item \((x-z-1)(2x+3)\)
+              \end{enumerate}
+
+        \item
+              \begin{enumerate}
+                  \item \((2x+4y-z)(3x-6y+z)\)
+                  \item \((3a^2-4b^2+1)(b^2-1)\)
+                  \item \((a^2+2a+1)(a^2-a+1)\)
+                  \item \((x^2+4x+5)(x^2-4x+5)\)
+              \end{enumerate}
+
+        \item
+              \begin{enumerate}
+                  \item \(2(a+5)(3-a)\)
+                  \item \(-4(p-2)(p+3)\)
+                  \item \(5(2x-1)(3x+1)\)
+                  \item \((y+3)(y-6)(-y)\)
+                  \item \((p-1)(1+p)(2p+3)\)
+                  \item \((x-5)(x+6)(x-1)\)
+              \end{enumerate}
+
+        \item
+              \begin{enumerate}
+                  \item \((3x-y)(x+y)+(2x+y)(x-y)\)
+                  \item \(5p(p-3)-(2p+1)(p-8)\)
+                  \item \((a-5)(b-5)-(a-6)(b-6)\)
+                  \item \(7n(9n+2)-(7n-1)(9n-2)\)
+              \end{enumerate}
+        \item
+              \begin{enumerate}
+                  \item \(a^8\cdot 2a^5\)
+                  \item \(a^8:a^5\)
+                  \item \(a^7\cdot(ab)\)
+                  \item \(2a^5:a^2\)
+                  \item \((3a)^3\cdot a^3\)
+                  \item \((a+1)^3(a+1)^4\)
+                  \item \(125a^{17}:a^3\)
+                  \item \(2a^3\cdot8a^2\)
+              \end{enumerate}
+
+        \item
+              \begin{enumerate}
+                  \item \(a^9:a^7\)
+                  \item \((2a)^4\cdot8a\)
+                  \item \(\dfrac{(2a)^4}{8a}\)
+                  \item \(\dfrac{a^5}{4}:\dfrac{16}{a}\)
+                  \item \(2a^3:(8a^2)\)
+                  \item \(27ab^2\cdot\dfrac{1}{3}a^3b\)
+                  \item \((2a)^3:\left(\dfrac{1}{4}a\right)\)
+                  \item \(\left(\dfrac{1}{2}a\right)^3:a^2\)
+              \end{enumerate}
+        \item Challenge Verwenden Sie die Grundgesetze der Arithmetik, um zu zeigen, dass \(0 \cdot a = 0\) für jede reelle Zahl \(a\) gilt. Tipp: Untersuchen Sie den Term \(0 \cdot a + a\) und wenden Sie die Gesetze an.
+    \end{enumerate}
+\end{ueb}
+
+\emph{Lösungen}
+\begin{enumerate}
+    \item
+          \begin{enumerate}
+              \item \(0\)
+              \item \(2a-2b\)
+              \item \(2x^3-4x^2\)
+              \item \(-2x^3\)
+          \end{enumerate}
+
+    \item
+          \begin{enumerate}
+              \item \(-8y\)
+              \item \(\dfrac{41}{6}xy\)
+              \item \(-3a^2+2ab-2b^2\)
+              \item \(m+2\)
+          \end{enumerate}
+
+    \item
+          \begin{enumerate}
+              \item \(-3a^3+2a^2+2a\)
+              \item \(7ab-a\)
+              \item \(u^2-9u\)
+              \item \(-3a^2+12a\)
+              \item \(4x^2-3x-5\)
+              \item \(0\)
+              \item \(3x^2-6x\)
+              \item \(k^3r+6k^2r\)
+          \end{enumerate}
+
+    \item
+          \begin{enumerate}
+              \item \(6a^2-17a+5\)
+              \item \(k^2-8k+16\)
+              \item \(c^2+7c+10\)
+              \item \(3a^4+a^2b^2-9a^2b-3b^3\)
+              \item \(a^3-1\)
+              \item \(2x^2-2xz+x-3z-3\)
+          \end{enumerate}
+
+    \item
+          \begin{enumerate}
+              \item \(6x^2-xz-24y^2+10yz-z^2\)
+              \item \(3a^2b^2-3a^2-4b^4+5b^2-1\)
+              \item \(a^4+a^3+a+1\)
+              \item \(x^4-6x^2+25\)
+          \end{enumerate}
+
+    \item
+          \begin{enumerate}
+              \item \(-2a^2-4a+30\)
+              \item \(-4p^2-4p+24\)
+              \item \(30x^2-5x-5\)
+              \item \(-y^3+3y^2+18y\)
+              \item \(2p^3+3p^2-2p-3\)
+              \item \(x^3-31x+30\)
+          \end{enumerate}
+
+    \item
+          \begin{enumerate}
+              \item \(5x^2+xy-2y^2\)
+              \item \(3p^2+8\)
+              \item \(a+b-11\)
+              \item \(37n-2\)
+          \end{enumerate}
+
+    \item
+          \begin{enumerate}
+              \item \(2a^{13}\)
+              \item \(a^3\)
+              \item \(a^8b\)
+              \item \(2a^3\)
+              \item \(27a^6\)
+              \item \((a+1)^7\)
+              \item \(125a^{14}\)
+              \item \(16a^5\)
+          \end{enumerate}
+
+    \item
+          \begin{enumerate}
+              \item \(a^2\)
+              \item \(128a^5\)
+              \item \(2a^3\)
+              \item \(\dfrac{a^6}{64}\)
+              \item \(\dfrac{a}{4}\)
+              \item \(9a^4b^3\)
+              \item \(32a^2\)
+              \item \(\dfrac{a}{8}\)
+          \end{enumerate}
+    \item \(0 \cdot a + a \stackrel{D}{=} a \cdot (0+1) \stackrel{N+}{=} a \cdot 1 \stackrel{I\cdot}{=}a \) Also ist \( 0 \cdot a = 0 \) (Eindeitigkeit der additiven Inversen).
+\end{enumerate}
