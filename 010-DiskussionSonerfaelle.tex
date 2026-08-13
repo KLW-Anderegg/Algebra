@@ -1,0 +1,220 @@
+\subsection{Sonderfälle bei Gleichungen mit Parameter}
+\begin{LA}
+    {Das Oma-Problem}{Oma}
+    Bobs Grossmutter ist \(d\) Jahre älter als seine Mutter. Bob behauptet: ``Wenn ich \(d\) Jahre alt bin, bin ich doppelt so alt wie meine Grossmutter!''
+
+    Das mag seltsam klingen, aber Bob kann das sogar beweisen:
+
+    Sei \(M\) das Alter von Bobs Mutter, \(G\) jenes von Bobs Grossmutter und \(d\) jenes von Bob.
+
+    \textbf{Voraussetzung:}
+    \[
+        G-M=d
+    \]
+    oder umgestellt:
+    \[
+        G=M+d
+        \qquad\text{beziehungsweise}\qquad
+        M=G-d.
+    \]
+
+    \textbf{Behauptung:}
+    \[
+        d=2G.
+    \]
+
+    \textbf{Beweis:}
+    Die Reihenfolge bei der Multiplikation spielt bekanntlich keine Rolle, also ist
+    \[
+        G\cdot M=M\cdot G.
+    \]
+
+    Nun verwenden wir auf der linken Seite die Voraussetzung \(M=G-d\) und rechts \(G=M+d\):
+    \[
+        \begin{aligned}
+            G(G-d)    & = M(M+d)     &  & \mid -MG \\
+            G(G-d)-MG & = M(M+d)-MG.
+        \end{aligned}
+    \]
+
+    Auf der linken Seite können wir \(G\) ausklammern, rechts hingegen \(M\). Man erhält
+    \[
+        \begin{aligned}
+            G(G-d-M) & = M(M+d-G)
+                     &                           & \mid :(G-d-M) \\
+            G        & = \frac{M(M+d-G)}{G-d-M}.
+        \end{aligned}
+    \]
+
+    Die Klammern im Zähler und im Nenner unterscheiden sich nur in den Vorzeichen:
+    \[
+        \begin{aligned}
+            G
+             & =\frac{M(M+d-G)}{G-d-M}           \\
+             & =\frac{M\cdot(-1)(-M-d+G)}{G-d-M} \\
+             & =\frac{-M(G-d-M)}{G-d-M}          \\
+             & =-M.
+        \end{aligned}
+    \]
+
+    Offenbar gilt also
+    \[
+        G=-M.
+    \]
+    Wenn man auf beiden Seiten \(G\) addiert, erhält man
+    \[
+        2G=G-M=d.
+    \]
+
+    Also ist Bob tatsächlich doppelt so alt wie seine Grossmutter!
+
+    \bigskip
+
+    \textbf{Aufgabe: Finden Sie den Fehler im Beweis.}
+\end{LA}
+
+
+
+
+
+
+
+\clearpage
+\begin{satz}{Das OMA-Problem}{}
+    Durch Null darf nicht geteilt werden, sonst lässt sich alles beweisen\footnote{Auch dass man doppelt so alt wie die eigene Grossmutter ist!}.
+\end{satz}
+
+Dieser Merksatz ist nicht neu. Durch die Verwendung von Parametern merkt man aber nicht immer gleich, wenn man durch Null teilt!
+
+Eine lineare Gleichung in \(x\) hat nach dem Umformen immer die Form
+\[
+    a\cdot x=b.
+\]
+
+Bevor man mit dem Lösen weiterfährt, muss man an dieser Stelle drei Fälle unterscheiden:
+
+\begin{enumerate}
+    \item Falls \(a\neq 0\) ist, kann man durch \(a\) teilen. Die Gleichung kann wie folgt gelöst werden:
+          \[
+              \begin{aligned}
+                  a\cdot x & = b           &  & \mid :a \\
+                  x        & = \frac{b}{a}
+              \end{aligned}
+          \]
+
+    \item Falls \(a=0\) und \(b=0\) ist, hat die Gleichung die Form
+          \[
+              0\cdot x=0.
+          \]
+          Diese Gleichung ist allgemeingültig. Jede Zahl ist eine Lösung. Die Lösungsmenge ist
+          \[
+              \mathbb{L}=\mathbb{R}.
+          \]
+
+    \item Falls \(a=0\) und \(b\neq 0\) ist, hat die Gleichung die Form
+          \[
+              0\cdot x=b.
+          \]
+          Diese Gleichung ist unerfüllbar. Es gibt keine Lösung. Die Lösungsmenge ist
+          \[
+              \mathbb{L}=\varnothing.
+          \]
+\end{enumerate}
+
+Wenn man beim Lösen einer Gleichung mit Parametern die Sonderfälle berücksichtigen will, muss man diese Fallunterscheidung durchführen.
+\clearpage
+\begin{bsp}{Gleichung mit Sonderfällen}{}
+    Die folgende Gleichung soll nach \(x\) aufgelöst werden -- mit Diskussion der Sonderfälle:
+    \[
+        px=q-5-3x.
+    \]
+    \vspace*{5cm}
+\end{bsp}
+
+\begin{ueb}
+    {Diskussion der Sonderfälle}{}
+    \begin{enumerate}
+        \item Diese Aufgaben haben Sie bereits gelöst, ohne mögliche Sonderfälle zu berücksichten. Lösen Sie sie erneut bzw. ergänzen Sie Ihre Lösung durch die Diskussion der Sonderfälle.
+
+              \begin{enumerate}
+                  \item \(cx+c=dx\)
+                  \item \(ax=a^2+a\)
+                  \item \(qx=1-px\)
+                  \item \(qx=-px\)
+                  \item \(ax-b=2b+x\)
+                  \item \((a+b)x=a^2+2ab+b^2\)
+                  \item \(x-p=p^2-px\)
+                  \item \(q+3qx=x\)
+              \end{enumerate}
+    \end{enumerate}
+\end{ueb}
+
+\clearpage
+\emph{Lösungen:}
+\begin{enumerate}
+    \item
+          \[
+              \begin{cases}
+                  \mathbb{L}=\left\{\dfrac{c}{d-c}\right\}, & d\neq c,  \\[1ex]
+                  \mathbb{L}=\mathbb{R},                    & d=c=0,    \\
+                  \mathbb{L}=\varnothing,                   & d=c\neq0.
+              \end{cases}
+          \]
+
+    \item
+          \[
+              \begin{cases}
+                  \mathbb{L}=\{a+1\},    & a\neq0, \\
+                  \mathbb{L}=\mathbb{R}, & a=0.
+              \end{cases}
+          \]
+
+    \item
+          \[
+              \begin{cases}
+                  \mathbb{L}=\left\{\dfrac{1}{p+q}\right\}, & p+q\neq0, \\[1ex]
+                  \mathbb{L}=\varnothing,                   & p+q=0.
+              \end{cases}
+          \]
+
+    \item
+          \[
+              \begin{cases}
+                  \mathbb{L}=\{0\},      & p+q\neq0, \\
+                  \mathbb{L}=\mathbb{R}, & p+q=0.
+              \end{cases}
+          \]
+
+    \item
+          \[
+              \begin{cases}
+                  \mathbb{L}=\left\{\dfrac{3b}{a-1}\right\}, & a\neq1,       \\[1ex]
+                  \mathbb{L}=\mathbb{R},                     & a=1,\ b=0,    \\
+                  \mathbb{L}=\varnothing,                    & a=1,\ b\neq0.
+              \end{cases}
+          \]
+
+    \item
+          \[
+              \begin{cases}
+                  \mathbb{L}=\{a+b\},    & a+b\neq0, \\
+                  \mathbb{L}=\mathbb{R}, & a+b=0.
+              \end{cases}
+          \]
+
+    \item
+          \[
+              \begin{cases}
+                  \mathbb{L}=\{p\},      & p\neq-1, \\
+                  \mathbb{L}=\mathbb{R}, & p=-1.
+              \end{cases}
+          \]
+
+    \item
+          \[
+              \begin{cases}
+                  \mathbb{L}=\left\{\dfrac{q}{1-3q}\right\}, & q\neq\dfrac13, \\[1ex]
+                  \mathbb{L}=\varnothing,                    & q=\dfrac13.
+              \end{cases}
+          \]
+\end{enumerate}

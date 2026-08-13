@@ -1,0 +1,234 @@
+
+
+\subsubsection{Rationale und irrationale Zahlen}
+
+In diesem Abschnitt werden wir den Unterschied zwischen rationalen und irrationalen Zahlen genauer untersuchen. Dabei werden wir die folgenden drei Fragen diskutieren:
+\begin{itemize}
+    \item Wieso kann man jede periodische Dezimalzahl als Bruch schreiben?
+    \item Wieso ist die Dezimaldarstellung einer rationalen Zahl entweder endlich oder periodisch?
+    \item Wie kann man zeigen, dass eine Zahl wie \(\sqrt{2}\) irrational ist?
+\end{itemize}
+
+Die erste Frage haben Sie vielleicht bereits in der Übung \Cref{uebng:zahlenmengen} beantwortet: Durch geschicktes Rechnen kann man bei einer solchen Zahl zum Beispiel \( x = 2.\overline{753}\) die Nachkommastellen eliminieren. In diesem Fall rechnet man:
+\[
+    1000x = 2753.\overline{753},
+    \qquad
+    x = 2.\overline{753}
+\]
+Damit erhält man:
+\[
+    999x = 2751
+    \qquad\Longrightarrow\qquad
+    x = \frac{2751}{999}
+    = \frac{917}{333}.
+\]
+
+Man kann sich leicht überlegen, dass man auf diese Weise jede periodische Zahl als Bruch darstellen kann.
+
+Zur zweiten Frage:
+
+\begin{LA}
+    {Brüche haben eine periodische Dezimaldarstellung}{}
+    Die folgenden Aufgaben sollen Ihnen helfen zu verstehen, wieso jeder Bruch eine periodische (oder endliche) Dezimaldarstelung hat.
+    \begin{enumerate}
+        \item Finden Sie die Dezimaldarstellung von \(\frac{1}{7}\), indem Sie schriftlich dividieren:
+              \begin{align*}
+                   & 1.00000 : 7 = 0.1\ldots \\
+                   & 10                      \\
+                   & \phantom{1}30
+              \end{align*}
+              \vspace*{2 cm}
+        \item 	Wann beginnt sich die Dezimaldarstellung zu wiederholen? Wie viele verschiedene Reste kann es bei einer Division durch eine ganze Zahl \(n\) geben?
+        \item 	Wieso ist die Dezimaldarstellung von \(\frac{1}{n}\) endlich oder periodisch? Wie lang kann die Periode sein?
+    \end{enumerate}
+\end{LA}
+
+
+
+
+
+
+
+
+
+
+
+
+\clearpage
+
+Nachdem wir die ersten beiden Fragen beantwortet haben, ist klar, dass die rationalen Zahlen genau die Zahlen sind, deren Dezimaldarstellung endlich oder periodisch ist. So kann man sich leicht eine irrationale Zahl denken. Zum Beispiel ist die Zahl \(1.234567891011121314\ldots\) irrational, weil sie weder endlich noch periodisch ist.
+
+Für die Mathematiker der Antike ist das kein gültiges Argument für die Existenz von irrationalen Zahlen. Zum Einen weil sie nicht ein Stellenwertsystem zur Darstellung der Zahlen verwendet haben, sondern ein System, das ähnlich wie die römischen Zahlen funktioniert hat. Zum Anderen weil Zahlen im antiken Griechenland als Längen von Strecken gedacht wurden. Umso mehr erstaunte es die damaligen Mathematiker als Strecken entdeckt wurden, deren Längen nicht als Bruch dargestellt werden können.
+
+Im Folgenden werden wir den Beweis von Euklid nachvollziehen, dass die Zahl \(\sqrt{2}\) irrational ist. Diese Zahl entspricht der Länge der Diagonale eines Quadrats mit Seitenlänge 1. Wir werden dazu einige Vorbereitungsaufgaben lösen.
+
+
+\begin{LA}
+    {Vorbereitung auf den Beweis von Euklid}{}
+    \begin{enumerate}
+        \item Zerlegen Sie folgende Zahlen in Primfaktoren:
+
+              Beispiel: \(48 = 2^4 \cdot 3\)
+
+              \begin{enumerate}
+                  \item \(6\)
+                  \item \(15\)
+                  \item \(20\)
+                  \item \(36\)
+                  \item  \(225\)
+                  \item \(400\)
+              \end{enumerate}
+
+              Wie hängen die ersten drei Zahlen mit den letzten drei zusammen? Wie hängen deren Primfaktorzerlegungen zusammen?
+
+        \item Betrachten Sie die Aussage:
+
+              \textit{In der Primfaktorzerlegung einer Quadratzahl kommt der Primfaktor \(2\) entweder gar nicht oder in gerader Anzahl vor.}
+
+              Erklären Sie in eigenen Worten, wieso die Aussage stimmt.
+    \end{enumerate}
+\end{LA}
+
+\clearpage
+Der Beweis von Euklid ist ein sogenannter \textit{Widerspruchsbeweis}. Bei dieser Beweismethode geht man wie folgt vor:
+
+\begin{enumerate}
+    \item Man nimmt an, dass die Behauptung falsch ist. (\textit{Widerspruchsannahme})
+    \item Man zeigt, dass die Annahme, die Behauptung sei falsch, zu einem Widerspruch führt.
+    \item Man folgert aus 2., dass die Behauptung stimmen muss.
+\end{enumerate}
+
+\begin{satz}{Irrationalität von \(\sqrt{2}\)}{}
+    Die Zahl \(\sqrt{2}\) ist irrational (also kein Bruch).
+\end{satz}
+
+
+
+
+
+
+
+
+\clearpage
+
+\begin{ueb}
+    {Zur rationale und irrationale Zahlen}{Q vs R}
+    \begin{enumerate}
+        \item
+              Verwandeln Sie den periodischen Dezimalbruch in einen gewöhnlichen Bruch.
+              \begin{enumerate}
+                  \item \(0.\overline{543}\)
+                  \item \(0.25\overline{7}\)
+                  \item \(0.4\overline{81}\)
+              \end{enumerate}
+
+
+        \item
+              \begin{enumerate}
+                  \item Beweisen Sie wie im Theoriebeispiel, dass \(\sqrt{3}\) irrational ist.
+                  \item Weisen Sie nach, dass \(\sqrt{20}\) irrational ist.
+                  \item \(\sqrt{25}=5\) ist eine aufgehende Quadratwurzel und somit rational. An welcher Stelle im Widerspruchsbeweis scheitert das Verfahren, einen Widerspruch zur Annahme herbeizuführen, wonach \(\sqrt{25}\) eine irrationale Zahl sein müsste?
+              \end{enumerate}
+
+        \item Wie können Sie anhand der Primfaktorzerlegung der natürlichen Zahl \(n\) erkennen, ob auch \(\sqrt{n}\) eine natürliche Zahl ist?
+
+
+        \item Ist die Aussage wahr oder falsch? Begründen Sie.
+
+              \begin{enumerate}
+                  \item \(4+\sqrt{7}\) ist rational.
+                  \item Die Summe zweier irrationaler Zahlen kann rational sein.
+                  \item Summe, Differenz, Produkt sowie Quotient zweier rationaler Zahlen sind rational.
+                  \item Das Produkt und der Quotient zweier irrationaler Zahlen sind auch irrational.
+              \end{enumerate}
+
+    \end{enumerate}
+\end{ueb}
+
+\clearpage
+\emph{Lösungen:}
+
+\begin{enumerate}
+    \item
+          \begin{enumerate}
+              \item \(\frac{181}{333}\)
+              \item \(\frac{58}{225}\)
+              \item \(\frac{53}{110}\)
+          \end{enumerate}
+
+    \item \dots
+          %   \begin{enumerate}
+          %       \item Angenommen, \(\sqrt{3}=\frac{a}{b}\). Dann
+          %             \[
+          %                 3b^2=a^2.
+          %             \]
+          %             Links kommt der Primfaktor \(3\) in ungerader, rechts in gerader Anzahl vor. Widerspruch. Also ist \(\sqrt{3}\) irrational.
+
+          %       \item
+          %             \[
+          %                 20=2^2\cdot5.
+          %             \]
+          %             In der Primfaktorzerlegung von \(20\) kommt der Primfaktor \(5\) in ungerader Anzahl vor. Daher kann \(20\) keine Quadratzahl sein und \(\sqrt{20}\) ist irrational.
+
+          %       \item Es entsteht kein Widerspruch, denn
+          %             \[
+          %                 25=5^2
+          %             \]
+          %             enthält jeden Primfaktor in gerader Anzahl. Tatsächlich gilt beispielsweise
+          %             \[
+          %                 \sqrt{25}=\frac{5}{1}.
+          %             \]
+          %   \end{enumerate}
+
+    \item \dots %\(\sqrt{n}\) ist genau dann eine natürliche Zahl, wenn in der Primfaktorzerlegung von \(n\) jeder Primfaktor in gerader Anzahl vorkommt.
+
+    \item \dots
+          %   \begin{enumerate}
+          %       \item Falsch, da \(\sqrt{7}\) irrational ist und somit auch \(4+\sqrt{7}\) irrational ist.
+
+          %       \item Wahr, zum Beispiel
+          %             \[
+          %                 \sqrt{2}+(-\sqrt{2})=0.
+          %             \]
+
+          %       \item Wahr, wobei beim Quotienten der Divisor ungleich \(0\) sein muss.
+
+          %       \item Falsch, zum Beispiel
+          %             \[
+          %                 \sqrt{2}\cdot\sqrt{2}=2
+          %                 \qquad\text{und}\qquad
+          %                 \frac{\sqrt{2}}{\sqrt{2}}=1.
+          %             \]
+          %   \end{enumerate}
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
