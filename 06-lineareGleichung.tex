@@ -1,0 +1,372 @@
+\subsection{Lineare Gleichungen}
+\begin{LA}
+    {Einführung}{E in linGl}
+    \begin{enumerate}
+        \item Lösen Sie die Gleichungen:
+              \begin{enumerate}
+                  \item \(3x=15\)\vspace{2cm}
+                  \item \(2x-6=0\)\vspace{2cm}
+                  \item \(2(x+1)-5=7-3x\) \vspace{4cm}
+                  \item \((x+1)^2+2=(x-2)^2-7\)
+              \end{enumerate}
+              \clearpage
+        \item Schreiben Sie eine Anweisung aus höchstens vier Teilschritten, mit der man Gleichungen wie jene von Aufgabe 1) lösen kann.
+
+              \begin{enumerate}
+                  \item[1. Schritt:] \vspace{1.2cm}
+                  \item[2. Schritt:] \vspace{1.2cm}
+                  \item[3. Schritt:] \vspace{1.2cm}
+                  \item[4. Schritt:] \vspace{1.2cm}
+              \end{enumerate}
+              \vspace{1.2cm}
+        \item Anna möchte in der Mathematik unbedingt eine 5 im Zeugnis erreichen. In den bisherigen drei Prüfungen hat sie die folgenden Resultate erzielt:
+              \begin{itemize}
+                  \item 1. Prüfung: \(4.75\)
+                  \item 2. Prüfung: \(5\)
+                  \item 3. Prüfung: \(5.25\)
+              \end{itemize}
+
+              Zudem hat sie eine \(5\) als Mündlichnote, welche aber nur halb so viel zählt wie eine Prüfung.
+
+              Nun möchte sie wissen, welche Note sie in der vierten und letzten Prüfung mindestens erzielen muss, damit ihr Notendurchschnitt \(4.75\) beträgt (und sie damit eine \(5\) im Zeugnis erhält).
+
+              \begin{enumerate}
+                  \item Stellen Sie eine Gleichung für dieses Problem auf.
+                  \item Lösen Sie die Gleichung nach Ihrer Anweisung aus Aufgabe 2).
+              \end{enumerate}
+    \end{enumerate}
+\end{LA}
+\clearpage
+Viele Fragen aus den verschiedensten Wissenschaften werden mit mathematischen Mitteln angegangen. Häufig läuft es darauf hinaus, dass eine Gleichung gelöst werden muss. In diesem Kapitel werden wir zunächst die einfachste Art von Gleichungen untersuchen: die sogenannten \textit{linearen Gleichungen}.
+
+\begin{definition}{Lineare Gleichung}{linearegleichung}
+    Eine Gleichung heisst linear, wenn sie sich auf die Form
+    \[
+        ax+b=0
+    \]
+    bringen lässt, wobei \(a\) und \(b\) zwei beliebige reelle Zahlen sind und \(x\) die Unbekannte bezeichnet.
+\end{definition}
+
+\begin{bsp}{Lineare Gleichungen}{}
+    \begin{enumerate}
+        \item Die Gleichung \(2x-5=0\) ist linear, weil sie die Form \(ax+b=0\) hat für \(a=2\) und \(b=-5\).
+
+        \item Die Gleichung \(2x+3=x\) ist auch linear, denn sie kann zu \(x+3=0\) umgeformt werden und hat somit die Form \(ax+b=0\) für \(a=1\) und \(b=3\).
+
+        \item Weitere Beispiele:
+
+              \begin{center}
+                  \renewcommand{\arraystretch}{1.8}
+                  \begin{tabular}{|>{\centering\arraybackslash}p{0.44\textwidth}|>{\centering\arraybackslash}p{0.44\textwidth}|}
+                      \hline
+                      \textbf{Lineare Gleichungen} & \textbf{Nicht-lineare Gleichungen}      \\
+                      \hline
+                      \(2x+5=0\)                   & \(x^2+8x+6=0\)                          \\
+                      \hline
+                      \(23(x-1)=7(x+2)\)           & \(\displaystyle\frac{1}{\sqrt{x+1}}=2\) \\
+                      \hline
+                      \(x^2+7x-2=x^2\)             & \(3^x=100\)                             \\
+                      \hline
+                  \end{tabular}
+              \end{center}
+    \end{enumerate}
+\end{bsp}
+
+Im Beispiel 2 wurde eine Gleichung bereits umgeformt. Dabei stellt sich die Frage, welche Umformungen überhaupt zulässig sind. Nun: Eine Umformung ist dann zulässig, wenn die neu entstandene Gleichung dieselben Lösungen besitzt wie die ursprüngliche. Genauer:
+
+\begin{definition}{Lösungsmenge und äquivalente Gleichungen}{loesungsmenge}
+    Die Menge aller Zahlen, welche eine gegebene Gleichung lösen, heisst die \textit{Lösungsmenge} \(\mathbb{L}\) der Gleichung.
+
+    Zwei Gleichungen heissen \textit{äquivalent}, wenn sie dieselbe Lösungsmenge haben.
+\end{definition}
+
+Jene Umformungen, welche die Lösungsmenge von Gleichungen nicht verändern, heissen \textit{Äquivalenzumformungen}. Davon gibt es im Wesentlichen zwei:
+\begin{satz}{Äquivalenzumformungen}{aequivalenzumformungen}
+
+    \begin{itemize}
+        \item Auf beiden Seiten der Gleichung dieselbe Zahl addieren oder subtrahieren.
+        \item Auf beiden Seiten der Gleichung mit derselben, von Null verschiedenen Zahl multiplizieren oder dividieren.
+    \end{itemize}
+\end{satz}
+
+Gleichungen werden nun so gelöst, dass man sie so lange unter Anwendung von Äquivalenzumformungen verändert, bis die Lösung gewissermassen auf der Hand liegt. Zur Übersicht schreibt man neben der Gleichung hin, welche Umformung jeweils verwendet wird:
+
+\begin{bsp}{Lösen einer linearen Gleichung}{}
+    \[
+        7x+4=2x-8
+    \]
+
+    \vspace{3cm}
+
+    Die Lösungsmenge
+    \[
+        \mathbb{L}=\left\{\hspace{1.5cm}\right\}
+    \]
+    kann nun von der letzten Gleichung direkt abgelesen werden.
+\end{bsp}
+
+\subsection*{Sonderfälle}
+
+Von einem Sonderfall ist die Rede, wenn beim Lösen der Gleichung die Unbekannte ``rausfällt''. Dabei entstehen zwei mögliche Situationen, die im Folgenden an Beispielen gezeigt werden:
+
+\begin{enumerate}
+    \item \textbf{Möglichkeit:}
+          \[
+              4(x+1)=4x+3
+          \]
+
+          \vspace{3cm}
+
+    \item \textbf{Möglichkeit:}
+          \[
+              3(3-x)=-2x-(x-9)
+          \]
+
+          \vspace{3cm}
+\end{enumerate}
+
+\subsubsection*{Produkt = Null}
+
+Eine spezielle Art von Gleichung sind solche, bei denen ein Produkt von zwei Termen Null ergibt, zum Beispiel:
+\[
+    (3x+1)(x-4)=0
+\]
+
+Wenn man die linke Seite der Gleichung ausmultipliziert, erhält man
+\[
+    3x^2-11x-4=0.
+\]
+Das ist keine lineare Gleichung (sondern eine quadratische, siehe später) und in der ausmultiplizierten Form nicht einfach zu lösen!
+
+Betrachten wir aber die ursprüngliche, faktorisierte Form, so lässt sich die Lösungsmenge leicht bestimmen. Das Produkt
+\[
+    (3x+1)(x-4)
+\]
+kann nur dann Null ergeben, wenn einer der beiden Faktoren Null ist. Also muss
+\[
+    (3x+1)=0
+\]
+oder
+\[
+    (x-4)=0
+\]
+sein. Aus der quadratischen Gleichung sind so zwei lineare Gleichungen entstanden, die leicht zu lösen sind:
+\[
+    3x+1=0
+    \quad\Longleftrightarrow\quad
+    x=-\frac13
+\]
+und
+\[
+    x-4=0
+    \quad\Longleftrightarrow\quad
+    x=4.
+\]
+
+Die Gleichung hat zwei Lösungen:
+\[
+    \mathbb{L}=\left\{-\frac13,4\right\}.
+\]
+
+\clearpage
+\begin{ueb}
+    {Zu Produkt = 0 und lineare Gleichungen}{}
+    \begin{enumerate}
+
+        \item Bestimmen Sie die Lösung der Gleichung.
+
+              \begin{enumerate}
+                  \item \((x+3)^2-(2x-1)^2=(3+x)(x-3)-4x^2-13\)
+
+                  \item \(2\cdot\bigl[3-4\cdot(x+2)-2\bigr]
+                        +\dfrac{1}{2}\cdot\bigl[2-4\cdot(x-1)\bigr]=0\)
+
+                  \item \((8x-1)(x+3)=8(x-2)^2\)
+
+                  \item \(3\cdot(4x-2)+(1-x)^2
+                        =\left(x+\dfrac{1}{3}\right)^2+3\cdot(2-3x)\)
+                  \item \((x+2)^2-(x-3)^2=10x-4\)
+                  \item \((x+4)(x-2)-(x+1)^2=-10\)
+              \end{enumerate}
+        \item Produkt = 0
+              \begin{enumerate}
+                  \item \((x+3)(2x-1)=0\)
+                  \item \(x(2x+2)=0\)
+                  \item \(3x^2-2x=0\)
+                  \item \(x^2+2x+1=0\)
+                  \item \(x^2-3x-28=0\)
+                  \item \(2x^2+10x+12=0\)
+              \end{enumerate}
+        \item Berechnen Sie die Lösung der Gleichung im Kopf.
+
+              \begin{enumerate}
+                  \item \(6\cdot(3x+1)=100-4\cdot(3x+1)\)
+                  \item \(x+321=456+320\)
+                  \item \(0.7\cdot(8x+1)=50-1.3\cdot(8x+1)\)
+                  \item \(314x+123x=246+314x\)
+                  \item \(21x+35=7\cdot(9-x)\)
+                  \item \(5x-x(x-3)=4+x-x(x-3)\)
+              \end{enumerate}
+    \end{enumerate}
+\end{ueb}
+\clearpage
+\emph{Lösungen:}
+\begin{enumerate}
+    \item
+          \begin{enumerate}
+              \item \(\mathbb{L}=\{-3\}\)
+              \item \(\mathbb{L}=\left\{-\dfrac{11}{10}\right\}\)
+              \item \(\mathbb{L}=\left\{\dfrac{7}{11}\right\}\)
+              \item \(\mathbb{L}=\left\{\dfrac{20}{33}\right\}\)
+              \item \(\mathbb{L}=\emptyset\)
+              \item \(\mathbb{L}=\R\)
+          \end{enumerate}
+
+    \item
+          \begin{enumerate}
+              \item \(\mathbb{L}=\left\{-3,\dfrac{1}{2}\right\}\)
+              \item \(\mathbb{L}=\{-1,0\}\)
+              \item \(\mathbb{L}=\left\{0,\dfrac{2}{3}\right\}\)
+              \item \(\mathbb{L}=\{-1\}\)
+              \item \(\mathbb{L}=\{-4,7\}\)
+              \item \(\mathbb{L}=\{-3,-2\}\)
+          \end{enumerate}
+
+    \item
+          \begin{enumerate}
+              \item \(\mathbb{L}=\{3\}\)
+              \item \(\mathbb{L}=\{455\}\)
+              \item \(\mathbb{L}=\{3\}\)
+              \item \(\mathbb{L}=\{2\}\)
+              \item \(\mathbb{L}=\{1\}\)
+              \item \(\mathbb{L}=\{1\}\)
+          \end{enumerate}
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\clearpage
+\subsubsection*{Der Kleine Gauss}
+Carl Friedrich Gauss (1777--1855) war ein deutscher Mathematiker und Astronom\footnote{Gauss liebte die reine Mathematik mehr als ihre Anwendungen. So soll er einmal gesagt haben:
+    ``Ob ich die Mathematik auf ein paar Dreckklumpen anwende, die wir Planeten nennen, oder auf rein
+    arithmetische Probleme, es bleibt sich gleich, die letzteren haben nur noch einen höheren Reiz für mich.''}
+Durch seine Werke wurde er zu einem der wichtigsten Mathematiker, die je gelebt haben.
+Laut einer Legende war sein mathematisches Talent schon in sehr jungen Jahren stark ausgeprägt:
+
+Als Gauss neun Jahre alt war, stellte sein Lehrer der Klasse einen besonders schwierigen Auftrag:
+Was erhält man, wenn man die ersten 100 Zahlen addiert? Oder anders gesagt: Was ist das Resultat der Rechnung
+\[
+    1+2+3+4+\dots+97+98+99+100\,?
+\]
+
+Der Lehrer meinte, die Schüler damit für den Rest der Stunde zu beschäftigen, aber Carl Friedrich Gauss
+hatte das Resultat bereits nach wenigen Minuten. Schauen wir uns an, wie er das gemacht hat:
+
+\begin{LA}
+    {Kleiner Gauss}{KleinerGauss}
+
+    \[
+        1+2+3+\dots+48+49+50+51+52+53+\dots+98+99+100
+    \]
+    \vspace*{5cm}
+    \begin{enumerate}
+        \item Klammern
+              \begin{enumerate}
+                  \item Verbinden Sie auch 2 und 99 mit einer Klammer. Dann 3 und 98 und so weiter.
+                  \item Wie gross ist die Summe der ersten 100 Zahlen?
+              \end{enumerate}
+
+        \item Verwenden Sie den ``Gauss-Trick'' für die folgende Summe:
+              \[
+                  1+2+\dots+499+500
+              \]
+
+        \item Wie lautet eine Formel für die Summe
+              \[
+                  1+2+3+\dots+n,
+              \]
+              falls \(n\) eine gerade Zahl ist?
+
+        \item Der ``Gauss-Trick'' funktioniert für die Summe
+              \[
+                  1+2+\dots+776+777
+              \]
+              nicht ohne Weiteres. Was läuft schief, wenn die letzte Zahl ungerade ist?
+              Wie kann man die Methode für diesen Fall anpassen?
+              Was ergibt dann die Summe?
+
+        \item Wie lautet eine Formel für die Summe
+              \[
+                  1+2+3+\dots+n,
+              \]
+              falls \(n\) eine ungerade Zahl ist?
+
+        \item Wie berechnen Sie
+              \[
+                  64+65+66+\dots+123+124+125\,?
+              \]
+
+    \end{enumerate}
+\end{LA}
+
+
+\clearpage
+\begin{satz}{Der ``kleine Gauss''}{kleinergauss}
+    Für die Summe der ersten \(n\) natürlichen Zahlen gilt
+    \[
+        1+2+3+\dots+n=\qquad.
+    \]
+\end{satz}
+
+Diese Summenformel kommt manchmal unerwartet zur Anwendung. Betrachten Sie dazu das folgende Beispiel.
+
+\begin{bsp}{Silvesterparty}{silvesterparty}
+    An einer Silvesterparty stösst jeder Gast mit jedem Gast einmal an. Wie oft klingen die Gläser, wenn 20 Gäste anwesend sind?
+
+    \textbf{Antwort:} Wir stellen uns vor, dass die Gäste nacheinander zur Feier erscheinen und beim Eintreffen mit allen bereits Anwesenden anstossen:
+    \begin{itemize}
+        \item Die erste Person stösst beim Eintreffen mit niemandem an.
+        \item Die zweite Person stösst mit der ersten an, also einmal.
+        \item Die dritte Person stösst mit den beiden ersten an, also zweimal.
+        \item \(\dots\)
+        \item Die zwanzigste und letzte Person stösst mit den bereits Anwesenden an, also 19 Mal.
+    \end{itemize}
+
+    Insgesamt erklingen die Gläser also \(0+1+2+\dots+19\) Mal. Mit dem kleinen Gauss für \(n=19\) folgt
+    \[
+        0+1+2+\dots+19
+        =\qquad
+    \]
+
+
+\end{bsp}
+
+\begin{ueb}{Silvesterparty}{}
+    An einer Silvesterparty stösst jeder Gast mit jedem Gast einmal an. Insgesamt erklingen die Gläser 78 Mal. Wie viele Gäste sind anwesend?
+
+    \emph{Hinweis:} Man kann dieses Problem natürlich durch Ausprobieren lösen. Lehrreicher ist es aber, wenn man es mit einer Gleichung versucht. Diese lässt sich mit der Methode \enquote{Produkt = 0} lösen\dots
+\end{ueb}
+
+\begin{ueb}{CHALLENGE: Diagonalen eines Vielecks}{}
+    Wie viele Ecken hat ein Vieleck mit 54 Diagonalen?
+\end{ueb}
+
+
+\emph{Lösungen:} 13 Gäste und 12 Ecken. Die wichtigere Frage ist aber, wie man die entsprechenden Gleichungen lauten und wie man diese löst\dots
+
+
+
+
